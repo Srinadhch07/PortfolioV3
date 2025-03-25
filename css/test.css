@@ -423,8 +423,7 @@ li a{
     }
 
     .profile-image-bg{
-        width: 350px;
-        height: 350px;
+        width: 85%;
         display: inline-block;
         margin-right: 5px;
     }
