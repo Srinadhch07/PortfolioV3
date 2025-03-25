@@ -423,7 +423,8 @@ li a{
     }
 
     .profile-image-bg{
-        width: auto;
+        width: 350px;
+        height: 350px;
         display: inline-block;
     }
     .profile-image-bg:hover{
