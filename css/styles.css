@@ -1,0 +1,171 @@
+body {
+    margin:0;
+    padding: 0;
+
+}
+
+@media screen and (max-width:720px){
+    body{
+        background-color: antiquewhite;    
+    }
+}
+
+
+html{
+    scroll-behavior: smooth;
+}
+
+/* Header section */
+.main-container{
+    width: 95%;
+    height: auto;
+    overflow: hidden;
+    margin:0;
+    padding: 20px;
+    border: 2px dotted red;
+    margin:auto;
+
+}
+
+.main-container img{
+    width: 25%;
+    height: 25%;
+    border-radius: 20%;
+    border: 2px solid black;
+    float: left;
+    margin-top: 10px;
+    animation: moveUp 3s;
+}
+
+.main-container img:hover{
+    transform:scale(1.1);
+    transition: 0.9s;
+    border: 3px solid #39FF14;
+    
+}
+.intro-container h1{
+    text-align:center;
+    text-emphasis: bold;
+    font-size:50px;
+}
+
+.main-container p{
+    text-align:  center;
+    border: 1px dotted black;
+    font-weight: bold;
+}
+.intro-container{
+    margin:10px;
+    margin-top: 4%;
+    border:2px solid black;
+    width:70%;
+    animation: moveLeft 3s;
+    padding: 20px;
+    display: inline-block;
+    text-align: center;
+}
+
+.intro-container a{
+    width: 30px;
+    text-decoration: none;
+    padding: 5px;
+    margin-left: 5%;
+    display: inline;
+    justify-content: center;
+    border: 2px solid black;
+    border-radius: 5px;
+}
+
+.intro-container a:hover{
+    background-color: #8F87F1;
+    color: white;
+    transition: 0.5s;
+}
+
+pre h2{
+    text-align:center;
+    font-size: 1rem;
+}
+
+/* Profile setup */
+
+
+/*Project  section*/
+
+
+.projects{
+    height: 300px;
+    width: 20%;
+    margin: 10px;
+    padding: 20px;
+    border: 2px solid whitesmoke;
+    text-align: center;
+    float: left;
+    border-radius: 5%;
+    box-shadow: 2px 2px gray;
+    
+    animation:moveUp 3s;
+    
+    transition: 0.9s;
+}
+.projects:hover{
+    
+    background-color: antiquewhite;
+    box-shadow: 4px 4px gray;
+    transform: scale(1.1    ); /* zoom in effect */
+    transition: 0.5s;
+
+}
+
+.projects img{
+    height : auto;
+    width: 100%;
+    border-radius: 3%;
+}
+
+
+.projects button{
+    width: 40%;
+    height: 30px;
+    cursor: pointer;
+    background-color: darkturquoise;
+    border-radius: 5px;
+}
+
+/* Project animations section*/
+
+@keyframes fadeIn {
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+@keyframes fadeOut {
+    0%{
+        opacity: 1;
+    }
+    100%{
+        opacity: 0;
+    }
+} 
+@keyframes moveUp{
+    0%{
+        transform:translateY(50px);
+    }
+    100%{
+        transform:translateY(0);
+    }
+}
+
+@keyframes moveLeft {
+    0%{
+        transform:translateX(100px);
+    }
+    100%{
+        transform:translateX(0);
+    }    
+}
+
+

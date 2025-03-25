@@ -1,0 +1,470 @@
+/* Basic tags*/
+body{
+    background-color: aqua;
+    margin:0;
+    padding: 0%;
+}
+html{
+    scroll-behavior: smooth;
+    transition: 0.5s;
+}
+.neonText{
+    color: #262424;
+    text-shadow:
+        0 0 7px #fff,
+        0 0 10px #fff,
+        0 0 21px #fff,
+        0 0 42px #0fa,
+        0 0 82px #0fa,
+        0 0 92px #0fa,
+        0 0 102px #0fa,
+        0 0 151px #0fa;
+  }
+a:active{
+    background: transparent;
+}
+/*Key Frames */
+@keyframes moveUpDown{
+    0%{
+        transform: translateY(0);
+    }
+    50%{
+        transform: translateY(-10px);
+    }
+    100%{
+        transform: translateY(0);
+    }
+}
+
+@keyframes moveUp{
+    0%{
+        transform: translateY(30px);
+    }
+    100%{
+        transform: translateY(0);
+    }
+    
+}
+
+@keyframes cardsZoomUp{
+    0%{
+        transform: scale(1);
+    }
+    100%{
+        transform: scale(1.1);
+    }
+    
+}
+@keyframes zoomUp{
+    0%{
+        transform: scale(0.5);
+    }
+    100%{
+        transform: scale(1);
+    }
+    
+}
+@keyframes zoomIn{
+    0%{
+        transform: scale(1);
+    }
+    100%{
+        transform: scale(0.5);
+    }
+    
+}
+@keyframes rotateRight{
+    0%{
+        transform: rotate(-30deg);
+    }
+    100%{
+        transform: rotate(0deg);
+    }
+    
+}
+
+@keyframes slideLeft {
+    0%{
+        background-position: 0% 50%;
+    }
+    100%{
+        background-position: 100% 50%;
+    }
+    
+}
+.main-container{
+    
+    border: 2px dotted black;
+    text-align: center;
+    padding: 10px;
+    animation: moveUp 2s;
+    transition: 0.5s;
+    display: inline-block;
+    width: 93%;
+    margin:auto;
+    margin-top: 4%;
+    align-self: center;
+    margin-left: 3%;
+   
+}
+.main-container:hover{
+    transform: scale(1.03);
+    transition: 0.5s;
+    border: 5px solid black;
+}
+.intro-container{
+    width: 65%;
+    display: block;
+    float: right;
+    /* border: 2px dotted black; */
+    padding-bottom: 15px; ;
+    text-align: center;
+    transition: width 2s ease;
+}
+
+
+.intro-container a{
+    display: inline-block;
+    width: 200px;
+    margin:auto;
+    text-decoration: none;
+    color: black;
+    font-size: 20px;
+    margin: 10px;
+    border: 2px solid black;
+    padding: 2px;
+    overflow: hidden;
+
+}
+
+.profile-image-bg{
+    background-image: url('/assets/home/backgroundNightView.jpg');
+    background-size:cover;
+    background-position: 0% 50%;
+    animation: slideLeft 5s linear infinite alternate;
+    border: 2px solid black;
+    display: inline-block;
+    padding: 20px;
+    width: 400px;
+    transition: width 2s ease;
+    margin-bottom: 2%;
+}
+.profile-image-bg:hover{
+    width: 97%;
+    display: block;
+
+    
+}
+.profile-image{
+    width: 350px;
+    height: 350px;
+    border: 2px solid black;
+    border-radius: 50%;
+    display: inline-block;
+    overflow:hidden;
+    animation: zoomUp 2s;
+    transition : 0.5s;
+
+}
+.profile-image:hover{
+    border: 5px solid black;
+    transition: 0.5s;
+    box-shadow: 5px 5px 5px red;
+}
+
+.intro-container a:hover{
+    background-color: black;
+    color: white;
+    transition: 0.5s;
+}   
+
+
+/*Works and contributions */
+
+.main-container .cards{
+    border: 2px solid black;
+    width: 30%;
+    height: 500px;
+    display: inline-block;
+    margin: auto;
+    padding: 5px;
+    margin-left: 5px;
+    margin-top: 10px;
+    overflow: hidden;
+    animation: moveUp 2s;
+    border-radius: 3%;
+}
+
+.cards img{
+    width: 250px;
+    height: 250px;
+    overflow: hidden;
+    border-radius: 10px;
+}
+
+.cards a{
+    display: inline-block;
+    width: 200px;
+    margin:auto;
+    text-decoration: none;
+    color: black;
+    margin: 10px;
+    border: 2px solid black;
+    padding: 2px;
+    overflow: hidden;
+}
+.cards:hover{
+    background-color: white;
+    border: 3px solid black;
+   transform: scale(1.05);
+    transition: 0.5s;
+    
+
+}
+.cards a:hover{
+    background-color: black;
+    color: white;
+    transition: 0.1s;
+}
+
+/* Socials*/
+.fa{
+    margin: 10px;
+}
+.fa-google{
+    padding: 10px;
+    text-decoration: none;
+}
+.fa-twitter{
+    padding: 10px;
+    text-decoration: none;
+    color:skyblue;
+    font-size: 100px;
+}
+.fa-linkedin{
+    color: blue;
+    padding: 10px;
+    text-decoration: none;
+    font-size: 100px;
+}
+.fa-instagram{
+    color: red;
+    padding: 10px;
+    text-decoration: none;
+    font-size: 100px;
+}
+.fa-youtube{
+    color: red;
+    padding: 10px;
+    text-decoration: none;
+    font-size: 100px;
+}
+.fa-whatsapp{
+    color: forestgreen;
+    padding: 10px;
+    text-decoration: none;
+    font-size: 100px;
+}
+.fa-github{
+    color: black;
+    padding: 10px;
+    text-decoration: none;
+    font-size: 100px;
+}
+
+/*socials*/
+.linkedin-badge{
+   border: 2px dotted black;
+   border-radius: 5px;
+   padding-top: 20px;
+   padding-bottom:20px ;
+   margin:auto;
+   background-image: url('/assets/home/backgroundNightView.jpg');
+    background-size:cover;
+    background-position: 0% 50%;
+    animation: slideLeft 5s linear infinite alternate;
+}
+
+.LI-profile-badge{
+    display: inline-block;
+}
+
+
+/* Footer */
+.footer{
+    font-family: monospace;
+    font-size: 20px;
+    background-color: black;
+    text-align: center;
+    color:white;
+    padding: 10px;
+    margin-top: 5%;
+}
+.footer a{
+    text-decoration: none;
+    color: white;
+    margin-top: 5px;
+}
+.links{
+    text-decoration: none;
+    color: white;
+    width: 50%;
+    display: inline-block;
+}
+.links a{
+    text-decoration: none;
+    color: white;
+    display: inline-block;
+    width: 100%;
+    transition: 0.5s;
+}
+
+.popButton{
+    position: fixed;
+    bottom: 30px;
+    margin-left: 90%;  
+    border: 2px solid black;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    text-align: center;
+    font-size: 30px;
+}
+.popButton:hover{
+    transform: rotate(360deg);
+    transition: 0.5s;
+    border: 3px solid black;
+    color:blue;
+    user-select: none;
+
+}
+.popButton a{
+    text-decoration: none;
+    color: black;
+    font-size: 30px;
+    margin-top: 10px;
+}
+.popButton a:active{
+    background: transparent;
+}
+
+/*Pop Up container*/
+.popUp-container{
+    border: 2px solid black;
+    display:none;
+    position: fixed;
+    z-index: 1;
+    left: 5%;
+    top: 30%;
+    width: 90%;
+    height: 50%;
+    overflow: auto;
+    background-color: rgb(0,0,0);
+    background-color: rgba(0,0,0,0.4);
+    background-color: white;
+    border-radius: 10px;
+    text-align: center;
+}
+/* .popUp-container:hover{
+    background-color: beige;
+    transition: 0.5s;
+} */
+.popUp-container p{
+    color: black;
+    font-size: 20px;
+    margin: 10px;
+    padding: 2px;
+}
+
+.popUp-container a{
+    text-decoration: none;
+    overflow:auto;
+}
+
+.popUp-container button{
+    border: 2px solid black;
+    width: 150px;
+    padding: 5px;
+    font-size: 20px;
+    transition: 0.5s;
+    margin:auto;
+    display: inline-block;
+    margin-top: 5px;
+    margin-left:5px;
+}
+.popUp-container button:hover{
+    background-color: black;
+    color: white;
+    transition: 0.5s;
+}
+
+
+
+li{
+    text-decoration: none;
+    font-size: 20px;
+    text-align: left;
+    margin-top:10px;
+}
+
+li a{
+    text-decoration: none;
+}
+/* Media Queries */ 
+
+@media screen and (max-width:720px){
+    .popButton{
+        margin-left: 80%;
+        width: 50px;
+        height: 50px;
+    }
+    .footer{
+        font-size: 15px;
+    }
+
+    .profile-image-bg{
+        width: auto;
+        display: inline-block;
+    }
+    .profile-image-bg:hover{
+        width: auto;
+        display: inline-block;
+    }
+    .profile-image{
+        width: 300px;
+        height: 300px;
+    }
+    body{
+        background-color: antiquewhite;    
+        margin: 0;
+    }
+    .main-container{
+        margin-left: 0%;
+    }
+    .main-container:hover{
+        transform: scale(1.0);
+        transition: 0.5s;
+        border: 3px solid black;
+    }
+    .intro-container{
+        width: 100%;
+        float: none;
+
+    }
+    .intro-container a:active{
+        background-color: black;
+        color: white;
+        transition: 0.5s;
+    }  
+    .cards:hover{
+        background-color: aqua;
+    }
+    .main-container .cards{
+        width: 95%;
+    }
+    .cards a:active{
+        background-color: black;
+        color: aqua;
+        transition: 0.5s;
+    }
+}
