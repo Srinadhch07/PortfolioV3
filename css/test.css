@@ -138,7 +138,7 @@ a:active{
 }
 
 .profile-image-bg{
-    background-image: url('../assets/home/backgroundNightView.jpg');
+    background-image: url('assets/home/backgroundNightView.jpg');
     background-size:cover;
     background-position: 0% 50%;
     animation: slideLeft 5s linear infinite alternate;
@@ -279,7 +279,7 @@ a:active{
    padding-top: 20px;
    padding-bottom:20px ;
    margin:auto;
-   background-image: url('../assets/home/backgroundNightView.jpg');
+   background-image: url('assets/home/backgroundNightView.jpg');
     background-size:cover;
     background-position: 0% 50%;
     animation: slideLeft 5s linear infinite alternate;
@@ -423,17 +423,16 @@ li a{
     }
 
     .profile-image-bg{
-        width: 100px;
+        width: auto;
         display: inline-block;
-        margin-right: 5px;
     }
     .profile-image-bg:hover{
         width: auto;
         display: inline-block;
     }
     .profile-image{
-        width: 270px;
-        height: 270px;
+        width: 300px;
+        height: 300px;
     }
     body{
         background-color: antiquewhite;    
